@@ -121,8 +121,19 @@ contract Hack {
 }
 
 ```
-
+```
 ʕ•̫͡•ʕ*̫͡*ʕ•͓͡•ʔ-̫͡-ʕ•̫͡•ʔ*̫͡*ʔ-̫͡-ʔ Well done, You have completed this level!!!
+```
+
+## 5. Token
+
+> contract.transfer("Instance address",21)
+
+Submit the instance 
+```
+٩(- ̮̮̃-̃)۶ Well done, You have completed this level!!!
+```
+
 
 
 
